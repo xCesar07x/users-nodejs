@@ -7,8 +7,7 @@ router.get('/users', (req, res) => {
 })
 
 router.post('/users', (req, res) => {
-    console.log(JSON.stringify(req.body));
-    res.send(`${JSON.stringify(req.body)}`)
+    res.json(req.body)
 })
 
 module.exports = router;
